@@ -1,8 +1,10 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #ffffff;
-  border-width: 0px;
+  background-color: #f1f1f1;
+  font-weight: lighter;
+  font-family: Avenir, "Trebuchet MS", Arial, sans-serif;
+
 }
 
 canvas {
@@ -11,12 +13,75 @@ canvas {
   padding-right: 0;
   display: block;
   width: 1024px;
-  border-width: 0px;
+  border-width: 10px;
+  border-color:#f1f1f1;
 }
 
 #container {
   margin: 0 auto;
   padding: 0;
   width: 1024px;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    font-size:17px;
+    padding: 0;
+    width: 200px;
+    background-color: #ffffff;
+    color: #08c3bf;
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+
+li a {
+    display: block;
+    color: #08c3bf;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #00000;
+    color: black;
+}
+
+.active {
+    background-color: #08c3bf;
+    color: white;
+}
+
+
+/* Add a black background color to the top navigation */
+.tbar {
+    background-color: #08c3bf;
+    overflow: hidden;
+    height:40px;
+}
+
+/* Style the links inside the navigation bar */
+.tbar a {
+    float: left;
+    display: block;
+    font-family: Futura,"Trebuchet MS", Arial, sans-serif;
+    position: fixed; /* Make it stick, even on scroll */
+    color: #ffffff;
+    text-align: center;
+    vertical-align:middle;
+    padding-left: 13px ;
+    padding-top:5px;
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 23px;
+}
+
+/* Change the color of links on hover */
+.tbar a:hover {
+    color: black;
 }
 
