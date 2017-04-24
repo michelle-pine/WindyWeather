@@ -41,7 +41,7 @@ function setup() {
 function placeCanvas() {
   var x = (windowWidth - width) / 2;
   var y = (windowHeight - height) / 2;
-  can.position(x, y);
+  can.position(250, 50);
 }
 
 //places at the center if the window is resized
@@ -295,6 +295,9 @@ function reset() {
   name1 = "";
   time = 0; 
 }
+
+
+
 
 
 
