@@ -1,0 +1,22 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  border-width: 0px;
+}
+
+canvas {
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+  display: block;
+  width: 1024px;
+  border-width: 0px;
+}
+
+#container {
+  margin: 0 auto;
+  padding: 0;
+  width: 1024px;
+}
+
