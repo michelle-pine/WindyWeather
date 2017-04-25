@@ -253,10 +253,8 @@ function preload() {
 
 // use the input to make a search query url
 function makeURL(temp) {
-  if (option == 1) {
     url = "https://api.apixu.com/v1/current.json?key=" + apiKey + "&q=" + temp;
     print(encodeURI(url));
-  }
 }
 
 //makes the url for lattiude and longitude
