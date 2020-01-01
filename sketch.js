@@ -253,13 +253,13 @@ function preload() {
 
 // use the input to make a search query url
 function makeURL(temp) {
-    url = "http://api.weatherstack.com/current?access_key=" + apiKey + "&query=" + temp;
+    url = "https://api.weatherstack.com/current?access_key=" + apiKey + "&query=" + temp;
     print(encodeURI(url));
 }
 
 //makes the url for lattiude and longitude
 function makeURL2(latt1, long1) {
-  url = "http://api.weatherstack.com/current?access_key=f631c2dd65202e68a5fec5c3549f0b88&query=" + latt1 + "," + long1;
+  url = "https://api.weatherstack.com/current?access_key=f631c2dd65202e68a5fec5c3549f0b88&query=" + latt1 + "," + long1;
   print(encodeURI(url));
 }
 
