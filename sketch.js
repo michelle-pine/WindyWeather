@@ -10,7 +10,7 @@ var query = ""; //for gathering the query
 var longgo = false; //to tell whether longitude is being inputted
 var latt =""; //lattitude value
 var long= ""; //longitude value
-var apiKey = "8ea258023cad41ad8d4151428172404"; // API key
+var apiKey = "f631c2dd65202e68a5fec5c3549f0b88"; // API key
 var url; // to store the url search term
 var w = 1024; // canvas width
 var h = 720; // canvas height
@@ -41,7 +41,7 @@ function setup() {
 function placeCanvas() {
   var x = (windowWidth - width) / 2;
   var y = (windowHeight - height) / 2;
-  can.position(250, 50);
+  can.position(0, 0);
 }
 
 //places at the center if the window is resized
@@ -253,13 +253,13 @@ function preload() {
 
 // use the input to make a search query url
 function makeURL(temp) {
-    url = "https://api.apixu.com/v1/current.json?key=" + apiKey + "&q=" + temp;
+    url = "http://api.weatherstack.com/current?access_key=" + apiKey + "&query=" + temp;
     print(encodeURI(url));
 }
 
 //makes the url for lattiude and longitude
 function makeURL2(latt1, long1) {
-  url = "https://api.apixu.com/v1/current.json?key=8ea258023cad41ad8d4151428172404&q=" + latt1 + "," + long1;
+  url = "http://api.weatherstack.com/current?access_key=f631c2dd65202e68a5fec5c3549f0b88&query=" + latt1 + "," + long1;
   print(encodeURI(url));
 }
 
@@ -270,7 +270,7 @@ function gotData(data) {
 	  var weather = data; 
 
 	  // store weather data
-	  wind = Math.round(data.current.wind_mph);
+	  wind = Math.round(data.current.wind_speed);
 	  name1 = data.location.name;
 	  num = wind; 
 	  
